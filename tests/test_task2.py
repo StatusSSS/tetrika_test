@@ -34,7 +34,7 @@ class MockSession:
 @pytest.fixture
 def patch_session(monkeypatch):
     monkeypatch.setattr(
-        'task2.solution.requests.Session',
+        'tetrika_test.task2.solution.requests.Session',
         lambda: MockSession([PAGE1, PAGE2])
     )
 
